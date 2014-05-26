@@ -70,4 +70,7 @@ public final class DataChannelNative extends JavaScriptObject {
         this.send(data);
     }-*/;
 
+	native void close() /*-{
+		this.close();
+    }-*/;
 }

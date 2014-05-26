@@ -84,6 +84,10 @@ public class DataChannel extends FNObject {
         impl.send(data);
     }
 
+    public void close() {
+        impl.close();
+    }
+
     public HandlerRegistration addOpenHandler(OpenEvent.Handler handler){
         return addFnEventHandler(OpenEvent.getType(), handler);
     }
